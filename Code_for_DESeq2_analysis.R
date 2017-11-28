@@ -3,7 +3,7 @@ source("http://bioconductor.org/biocLite.R")
 biocLite("DESeq2")
 library("DESeq2")
 
-Method1:
+#Method1:
 raw.data = read.table(file= "rexample.txt",header = TRUE)
 counts = raw.data[, -1]
 rownames(counts)=raw.data[,1]
@@ -17,7 +17,7 @@ head(resDESeq2)
 write.csv(resDESeq2, file = "all_genes_expression.csv")
 
 
-Mthod-2
+#Mthod-2 : Slightly different than method 1
 
 CountData = read.table(file= "rexample.txt",header = TRUE,row.names=1)
 # Filter data where you only have 0 or 1 read count across all samples.
@@ -44,7 +44,7 @@ write.csv(res, file = "all_genes_expression.csv")
 
 
 
-Method-3:
+#Method-3: Pairwise comparision included
 > Library("DESeq2")                
  > CountTable  = read.table("dexample.txt", header=TRUE, row.names=1)                
  > head(CountTable)            
