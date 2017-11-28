@@ -1,3 +1,11 @@
+#Identification of differentially expressed genes
+#Requires a input text file containing raw read counts
+
+
+#Md Shamimuzzaman
+# Postdoctoral Research Computational Biologist at USDA-ARS
+# Date: 10 Nov, 2016
+
 source("https://bioconductor.org/biocLite.R")
 biocLite("edgeR")
 library("edgeR")
